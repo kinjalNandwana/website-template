@@ -376,10 +376,10 @@
         var tmp   = Math.round(ma * (r * Math.pow((1 + r), n)) / (Math.pow((1 + r), n) - 1));
         var total = tmp + parseFloat(taxesValue) + parseFloat(duesValue);
 
-        $('#pxp-calculator-data-pi').text('$' + tmp.toString().replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ','));
+        $('#pxp-calculator-data-pi').text('₹' + tmp.toString().replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ','));
         $('#pxp-calculator-data-pt').text(taxes);
         $('#pxp-calculator-data-hd').text(dues);
-        $('.pxp-calculator-chart-result-sum').text('$' + total.toString().replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ','));
+        $('.pxp-calculator-chart-result-sum').text('₹' + total.toString().replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ','));
 
         calculatorChart.data.datasets[0].data = [tmp, taxesValue, duesValue];
         calculatorChart.update();
@@ -417,7 +417,7 @@
         var newInputValue;
 
         if (dataType == 'currency') {
-            newInputValue = '$' + inputValue.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+            newInputValue = '₹' + inputValue.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ',');
         } else if (dataType == 'percent') {
             newInputValue = inputValue.replace(/\,/g, '.') + '%';
         }
@@ -451,7 +451,7 @@
 
         var priceValue = price.replace(/\D+/g, '');
         var downPrice = Math.round(parseFloat(downPercentage) * parseFloat(priceValue) / 100);
-        var newDownPrice = '$' + downPrice.toString().replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        var newDownPrice = '₹' + downPrice.toString().replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
         $('#pxp-calculator-form-down-price').val(newDownPrice);
 
@@ -464,7 +464,7 @@
 
         var priceValue = price.replace(/\D+/g, '');
         var downPrice = Math.round(parseFloat(downPercentage) * parseFloat(priceValue) / 100);
-        var newDownPrice = '$' + downPrice.toString().replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        var newDownPrice = '₹' + downPrice.toString().replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
         $('#pxp-calculator-form-down-price').val(newDownPrice);
 
