@@ -2003,6 +2003,16 @@ h1.pxp-page-header {
 .pxp-services-item:hover .pxp-services-item-text {
     transform: translateY(-50%);
 }
+.class:hover .class2{
+    
+margin-top: 22px !important;
+}
+
+.class:hover .class4{
+    
+    margin-top: -12px !important;
+    }
+
 .pxp-services-item-cta {
     position: absolute;
     color: #333;
