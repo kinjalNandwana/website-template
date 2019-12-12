@@ -235,6 +235,9 @@ h1.pxp-page-header {
     font-size: 2.8rem;
     line-height: 3rem;
 }
+.pxp-paginantion {
+    text-align: right;
+}
 .pxp-paginantion .page-item .page-link {
     color: #333;
     background-color: transparent;
@@ -2745,9 +2748,6 @@ h1.pxp-page-header {
 }
 .pxp-content-side-wrapper {
     padding: 30px;
-}
-.pxp-content-left {
-    padding-right: 50%;
 }
 .pxp-map-side #results-map {
     height: 100%;
