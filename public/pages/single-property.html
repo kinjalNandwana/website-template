@@ -1,0 +1,355 @@
+        <div ng-controller='PropertyPageController'>
+            <div ng-include="'./pages/booking-form.html'"></div>
+            <div class="pxp-header fixed-top pxp-animate pxp-no-bg">
+                <div class="pxp-container-full">
+                    <div class="row align-items-center">
+                        <div class="col-4 col-md-2">
+                            <a href="/" class="pxp-logo text-decoration-none">Ardor Living</a>
+                        </div>
+                        <div class="col-2 col-md-8 text-center">
+                                <ul class="pxp-nav list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="/">Home</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="/projects">Properties</a>
+                                        <!-- <ul class="pxp-nav-sub rounded-lg">
+                                            <li><a href="properties.html">All Properties</a></li>
+                                            <li><a href="single-property.html">Bengeluru</a></li>
+                                            <li><a href="single-property.html">Dehradun</a></li>
+                                            <li><a href="single-property.html">Pune</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <!-- <li class="list-inline-item">
+                                        <a href="#">Why Ardor</a> -->
+                                        <!-- <ul class="pxp-nav-sub rounded-lg">
+                                            <li><a href="agents.html">All Agents</a></li>
+                                            <li><a href="single-agent.html">Single Agent</a></li>
+                                        </ul> -->
+                                    <!-- </li> -->
+                                    <li class="list-inline-item">
+                                        <a href="#">Enquiry</a>
+                                        <!-- <ul class="pxp-nav-sub rounded-lg">
+                                            <li><a href="blog.html">All Blog Posts</a></li>
+                                            <li><a href="single-post.html">Single Blog Post</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#">Partner with us</a>
+                                        <ul class="pxp-nav-sub rounded-lg">
+                                            <li><a href="submit-property.html">Property Owners</a></li>
+                                            <li><a href="#">Vendors</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="#"></a>
+                                    </li> -->
+                                    <!-- <li class="list-inline-item">
+                                            <a href="#">Themes</a>
+                                            <ul class="pxp-nav-sub rounded-lg">
+                                                <li><a href="index.html">Light</a></li>
+                                                <li><a href="http://pixelprime.co/themes/resideo/dark/index.html">Dark</a></li>
+                                            </ul>
+                                        </li> -->
+                                    <li class="list-inline-item pxp-is-last"><a href="/contact-us">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        <div class="col-5 col-md-2 text-right">
+                            <a href="javascript:void(0);" class="pxp-header-nav-trigger"><span class="fa fa-bars"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="pxp-content">
+                <div class="pxp-single-property-top pxp-content-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-5">
+                                <h2 class="pxp-sp-top-title">{{projectData.project.name}}</h2>
+                                <p class="pxp-sp-top-address pxp-text-light">{{projectData.project.address}}</p>
+                            </div>
+                            <div class="col-sm-12 col-md-7">
+                                <div class="clearfix d-block d-xl-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="project-details col-8 col-md-7">
+                            <div id="myCarousel" data-ride="carousel" class="pxp-single-property-gallery carousel slide">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                                    <li data-target="#myCarousel" data-slide-to="4"></li>
+
+                                  </ol>
+                                  <div class="carousel-inner pxp-sp-gallery-main-img">
+                                    <div class="carousel-item active">
+                                      <img class="d-block w-100 pxp-cover" src="images/properties/prop-11-1-gallery.jpg" alt="#" >
+                                    </div>
+                                
+                                    <!-- <div class="carousel-item">
+                                      <img class="d-block w-100 pxp-cover" src="images/properties/images-2.jpg" alt="#" style="width:100%;">
+                                    </div> -->
+                                
+                                    <div class="carousel-item">
+                                      <img class="d-block w-100 pxp-cover" src="images/properties/main-prop-3-gallery.jpg" alt="#" >
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100 pxp-cover" src="images/properties/1.jpg" alt="#" >
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100 pxp-cover" src="images/properties/images-6.jpg" alt="#" >
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100 pxp-cover" src="images/properties/images-7.jpg" alt="#" >
+                                    </div>
+                                  </div>
+                                
+                                  <!-- Left and right controls -->
+                                  <a class="carousel-control-prev" data-target="#myCarousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next" data-target="#myCarousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </div>
+                                <div class="pxp-single-property-section">
+                                    <h3>Key Details</h3>
+                                    <div class="row mt-3 mt-md-4">
+                                        <div class="col-sm-6">
+                                            <div class="pxp-sp-key-details-item">
+                                                <div class="pxp-sp-kd-item-label text-uppercase">Rent starts at</div>
+                                                <div class="pxp-sp-kd-item-value">Rs. {{projectData.project.rent}}/month</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="pxp-sp-key-details-item">
+                                                <div class="pxp-sp-kd-item-label text-uppercase">Deposit</div>
+                                                <div class="pxp-sp-kd-item-value">Rs. {{projectData.project.deposit}}</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="pxp-sp-key-details-item">
+                                                <div class="pxp-sp-kd-item-label text-uppercase">Notice Period</div>
+                                                <div class="pxp-sp-kd-item-value">{{projectData.project.noticePeriod}} month</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="pxp-sp-key-details-item">
+                                                <div class="pxp-sp-kd-item-label text-uppercase">Lock In Period</div>
+                                                <div class="pxp-sp-kd-item-value">{{projectData.project.lockInPeriodDuration}} months</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="pxp-single-property-section pxp-schedule-visit">
+                                    <h3>Schedule A Visit</h3>
+                                    <div class="row mt-3 mt-md-4">
+                                        <div class="form-group col-md-12">
+                                            <input placeholder="Enter your Name" type="text" class="form-control">
+                                            <!-- <span style="position:absolute; left:8px;top:8px;" class="fa fa-user icon" aria-hidden="false"></span> -->
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <input type="email" placeholder="Your Email Address" class="form-control">
+                                            <!-- <span style="position:absolute; left:8px;top:8px;" class="fa fa-envelope icon" aria-hidden="true"></span> -->
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <input type="number" placeholder="Your Phone Number" class="form-control">
+                                            <!-- <span style="position:absolute; left:8px;top:8px;" class="fa fa-phone icon" aria-hidden="true"></span> -->
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <md-datepicker class="form-control" md-hide-icons="calendar" ng-model="schedule.date" md-placeholder="Select a Date" md-open-on-focus></md-datepicker>
+                                            <!-- <span style="position:absolute; left:8px;top:8px;" class="fa fa-calender-alt icon" aria-hidden="true"></span> -->
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <button class="btn pxp-schedule-visit-btn form-control offset-md-6">Schedule Visit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                        <div class="pxp-single-property-section mt-md-3">
+                                            <h3>Room Sharing Type</h3>
+                                            <div class="row mt-3 mt-md-2">
+                                                <div class="row pxp-single-property-room-type col-md-12 btn-toolbar">
+                                                    <button class="col-sm-4 col-md-4 col-lg-4 btn" ng-class="{'button-active': showSingleType==true}" ng-click="showSharingType('singleType')" style="border-style:none;border-right: 1px solid #333;">
+                                                        <span ng-model="showSingleType">Private Rooms</span>
+                                                    </button>
+                                                    <button class="col-sm-4 col-md-4 col-lg-4 btn" ng-class="{'button-active': showDoubleType==true}" ng-click="showSharingType('doubleType')" style="border-style: none; border-right: 1px solid #333;">
+                                                        Shared Rooms
+                                                    </button>
+                                                    <button class="col-sm-4 col-md-4 col-lg-4 btn" ng-class="{'button-active': showTripleType==true}" ng-click="showSharingType('tripleType')">
+                                                        Triple Rooms
+                                                    </button>
+                                                </div>
+                                                <div class="row mt-3 mx-2 btn-toolbar col-md-12">
+                                                    <button class="col-sm-6 col-md-4 col-lg-4 btn pxp-single-property-room-sharing mx-2" ng-class="{'sharing-selected': listings._id==idSelectedListing}" ng-click="selectListingType(listings)" ng-repeat="listings in singleListingData" ng-show="showSingleType">
+                                                        <div class="sharing-price">starting from: ₹ {{listings.actualRentFromTenant}}</div>
+                                                        <div ng-model="bookType" ng-if="listings._id==idSelectedListing" class="sharing-book-btn">{{bookType}}</div>
+                                                    </button>
+                                                    
+                                                    <button class="col-sm-6 col-md-4 col-lg-4 btn pxp-single-property-room-sharing mx-2" ng-class="{'sharing-selected': listings._id==idSelectedListing}" ng-click="selectListingType(listings)"  role="button" ng-repeat="listings in doubleListingData" ng-show="showDoubleType">
+                                                        <div class="sharing-price">starting from: ₹ {{listings.actualRentFromTenant}}</div>
+                                                        <div ng-model="bookType" ng-if="listings._id==idSelectedListing" class="sharing-book-btn">{{bookType}}</div>
+                                                    </button>
+                                                    <button class="col-sm-6 col-md-4 col-lg-4 btn pxp-single-property-room-sharing mx-2" ng-class="{'sharing-selected': listings._id==idSelectedListing}" ng-click="selectListingType(listings)" role="button" ng-repeat="listings in filteredList" ng-show="showTripleType">
+                                                        <div class="sharing-price">starting from: ₹ {{listings.actualRentFromTenant}}</div>
+                                                        <div ng-model="bookType" ng-if="listings._id==idSelectedListing" class="sharing-book-btn">{{bookType}}</div>
+                                                    </button>
+                                                </div>
+                                                <div class="row col-md-8 mt-3 mx-2">
+                                                    <button class="offset-lg-4 col-md-8 col-lg-8 col-sm-6 btn pxp-single-property-book" ng-click="storeBookingInfo()" data-toggle="modal"
+                                                    >Book Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="container mt-1">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="pxp-single-property-section mt-md-5">
+                                <h3>Amenities</h3>
+                                <div class="row mt-3 mt-md-4">
+                                    <div class="col-sm-6 col-lg-4" ng-repeat="(key, value) in projectData.project.amenityFeature" ng-class="{'text-muted': value==false}">
+                                        <div class="pxp-sp-amenities-item" ng-model="value">  {{key | capitalize}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="container mt-4" ng-show="projectData.similarProperties.length>1">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="pxp-single-property-section pxp-similar-property-section mt-md-5">
+                                <h3>Similar Properties</h3>
+                                <div class="row">
+                                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                                <a href="/project/{{projectData.similarProperties[0]._id}}" class="pxp-areas-1-item rounded-lg">
+                                                    <div class="pxp-areas-1-item-fig pxp-cover" style="background-image: url(./images/Pune.jpg);">
+                                                    </div>
+                                                    <div class="pxp-areas-1-item-details">
+                                                        <div class="pxp-areas-1-item-details-area">{{projectData.similarProperties[0].name}}</div>
+                                                    </div>
+                                                    <div class="pxp-areas-1-item-counter"><span>Rent starts at Rs. {{projectData.similarProperties[0].rent ? projectData.similarProperties[0].rent : 8000}}</span></div>
+                                                    <div class="pxp-areas-1-item-cta text-uppercase">Explore</div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                                <a href="/project/{{projectData.similarProperties[1]._id}}" class="pxp-areas-1-item rounded-lg">
+                                                    <div class="pxp-areas-1-item-fig pxp-cover" style="background-image: url(./images/Pune.jpg);">
+                                                    </div>
+                                                    <div class="pxp-areas-1-item-details">
+                                                        <div class="pxp-areas-1-item-details-area">{{projectData.similarProperties[1].name}}</div>
+                                                    </div>
+                                                    <div class="pxp-areas-1-item-counter"><span>Rent starts at Rs. {{projectData.similarProperties[1].rent ? projectData.similarProperties[1].rent : 8000}}</span></div>
+                                                    <div class="pxp-areas-1-item-cta text-uppercase">Explore</div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                                <a href="/project/{{projectData.similarProperties[2]._id}}" class="pxp-areas-1-item rounded-lg">
+                                                    <div class="pxp-areas-1-item-fig pxp-cover" style="background-image: url(./images/Pune.jpg);">
+                                                    </div>
+                                                    <div class="pxp-areas-1-item-details">
+                                                        <div class="pxp-areas-1-item-details-area">{{projectData.similarProperties[2].name}}</div>
+                                                    </div>
+                                                    <div class="pxp-areas-1-item-counter"><span>Rent starts at Rs. {{projectData.similarProperties[2].rent ? projectData.similarProperties[2].rent : 8000}}</span></div>
+                                                    <div class="pxp-areas-1-item-cta text-uppercase">Explore</div>
+                                                </a>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="container mt-4" ng-show="projectData.similarProperties.length==1">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="pxp-single-property-section pxp-similar-property-section mt-md-5">
+                                <h3>Similar Properties</h3>
+                                <div class="row">
+                                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                                <a href="/project/{{projectData.similarProperties[0]._id}}" class="pxp-areas-1-item rounded-lg">
+                                                    <div class="pxp-areas-1-item-fig pxp-cover" style="background-image: url(./images/Pune.jpg);">
+                                                    </div>
+                                                    <div class="pxp-areas-1-item-details">
+                                                        <div class="pxp-areas-1-item-details-area">{{projectData.similarProperties[0].name}}</div>
+                                                    </div>
+                                                    <div class="pxp-areas-1-item-counter"><span>Rent starts at Rs. {{projectData.similarProperties[0].rent ? projectData.similarProperties[0].rent : 8000}}</span></div>
+                                                    <div class="pxp-areas-1-item-cta text-uppercase">Explore</div>
+                                                </a>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+    
+            <div class="pxp-footer pt-5 pb-100 mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-4">
+                            <div class="pxp-footer-logo">Ardor Living</div>
+                            <div class="pxp-footer-address mt-2">
+                                90 Fifth Avenue, 3rd Floor<br>
+                                San Francisco, CA 1980<br>
+                                (123) 456-7890
+                            </div>
+                            <div class="pxp-footer-social mt-2">
+                                <a href="#"><span class="fa fa-instagram"></span></a>
+                                <a href="#"><span class="fa fa-facebook-square"></span></a>
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-8">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4">
+                                    <h4 class="pxp-footer-header mt-4 mt-lg-0">Company</h4>
+                                    <ul class="list-unstyled pxp-footer-links mt-2">
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Agents</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Demos</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <h4 class="pxp-footer-header mt-4 mt-lg-0">Explore</h4>
+                                    <ul class="list-unstyled pxp-footer-links mt-2">
+                                        <li><a href="#">Homes for Rent</a></li>
+                                        <li><a href="#">Apartments for Rent</a></li>
+                                        <li><a href="#">CRM</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="pxp-footer-bottom mt-2">
+                        <div><a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></div>
+                        <div class="pxp-footer-copyright">&copy; Ardor Living All Rights Reserved. 2019</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    
